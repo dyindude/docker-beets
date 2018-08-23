@@ -19,7 +19,7 @@ RUN \
 	make \
 	mpg123-dev \
 	openjpeg-dev \
-	python2-dev && \
+	python3-dev && \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
 	curl \
@@ -36,10 +36,10 @@ RUN \
 	mpg123 \
 	nano \
 	openjpeg \
-	py2-gobject3 \
-	py2-pip \
-	py2-pylast \
-	python2 \
+	py3-gobject3 \
+	py3-pip \
+	py3-pylast \
+	python3 \
 	sqlite-libs \
 	tar \
 	wget && \
@@ -65,7 +65,7 @@ RUN \
  make && \
  make install && \
  echo "**** install pip packages ****" && \
- pip install --no-cache-dir -U \
+ pip3 install --no-cache-dir -U \
 	beautifulsoup4 \
 	beets \
 	beets-copyartifacts \
